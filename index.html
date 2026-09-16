@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hariharan D — Software Developer</title>
+
+  <meta
+    name="description"
+    content="Hariharan D — Software Developer specializing in Node.js, React and full-stack systems."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div id="scrollProgress"></div>
+
+  <div class="admin-pill" id="adminPill" style="display:none;">
+    ADMIN MODE
+  </div>
+
+  <!-- ============ Navbar ============ -->
+
+  <header class="navbar" id="navbar">
+    <div class="wrap nav-inner">
+
+      <a href="#top" class="brand">
+        Hariharan <span>D.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-top">
+
+      <span class="brand">
+        Hariharan <span>D.</span>
+      </span>
+
+      <button
+        class="hamburger"
+        id="mobileClose"
+        aria-label="Close menu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+
+    </div>
+
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+
+  </div>
+
+  <main id="top">
+
+    <!-- ============ Hero ============ -->
+
+    <section class="hero" id="hero">
+
+      <div class="hero-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+
+      <div class="wrap hero-grid">
+
+        <div>
+
+          <span class="hero-tag">
+            <span class="dot"></span>
+            Open to new opportunities
+          </span>
+
+          <h1>
+            Hi, I'm Hariharan — I build
+            <span class="gradient-text">
+              reliable software
+            </span>,
+            end to end.
+          </h1>
+
+          <p class="hero-role-line">
+            <span id="roleText"></span>
+            <span class="cursor"></span>
+          </p>
+
+          <p class="desc">
+            2+ years designing, deploying and maintaining full-stack
+            applications — from REST APIs to the databases behind them —
+            with a habit of tracking bugs to their root cause instead of
+            patching symptoms.
+          </p>
+
+          <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#projects">
+              View my work
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+
+            <!-- DOWNLOAD RESUME BUTTON -->
+
+            <a
+              class="btn btn-outline"
+              href="./assets/resume.pdf"
+              download="Hariharan-D-Software-Developer-Resume.pdf"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/>
+              </svg>
+              Download resume
+            </a>
+
+            <a
+              class="btn btn-ghost"
+              href="mailto:imdhariharan@gmail.com"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M4 6h16v12H4z" />
+                <path d="M4 7l8 6 8-6" />
+              </svg>
+
+              Email me
+            </a>
+
+          </div>
+
+          <div class="hero-stats">
+
+            <div>
+              <strong>2+</strong>
+              <span>Years experience</span>
+            </div>
+
+            <div>
+              <strong>10+</strong>
+              <span>Technologies used</span>
+            </div>
+
+            <div>
+              <strong>5</strong>
+              <span>Certifications</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-photo-wrap">
+
+          <div class="hero-photo-ring">
+
+            <div class="hero-photo">
+
+              <img
+                src="assets/profile.jpeg"
+                alt="Hariharan D"
+              />
+
+            </div>
+
+          </div>
+
+          <div class="hero-badge badge-1">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+
+            Root cause fixer
+
+          </div>
+
+          <div class="hero-badge badge-2">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+
+            Bangalore, India
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="scroll-cue">
+        <div class="stick"></div>
+        scroll
+      </div>
+
+    </section>
+
+
+    <!-- ============ About ============ -->
+
+    <section id="about">
+
+      <div class="wrap about-grid">
+
+        <div data-reveal>
+
+          <div class="about-card">
+
+            <div class="mini-terminal">
+
+              <span class="p">$</span> whoami<br>
+
+              <span class="k">></span>
+              software developer, bangalore
+
+              <br><br>
+
+              <span class="p">$</span> cat focus.txt<br>
+
+              <span class="k">></span>
+              backend systems, REST APIs,<br>
+
+              &nbsp;&nbsp;database performance
+
+              <br><br>
+
+              <span class="p">$</span> uptime<br>
+
+              <span class="k">></span>
+              2+ years, still debugging
+
+              <br>
+
+              <span class="p">$</span>
+              <span
+                class="cursor"
+                style="background:#7ee6c4;"
+              ></span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div data-reveal data-reveal-delay="1">
+
+          <span class="eyebrow">
+            About me
+          </span>
+
+          <h2
+            style="
+              font-size:clamp(1.8rem,3vw,2.4rem);
+              margin-bottom:18px;
+            "
+          >
+            Software that stays up, and code that's easy to hand off.
+          </h2>
+
+          <p>
+            I'm a software developer based in Bangalore, working across
+            the stack with Node.js, React, PostgreSQL and Python.
+            At Celton Semiconductors, I moved internal business tools
+            from AppSheet into modern full-stack web apps — REST APIs,
+            real-time workflow automation, and the database work underneath.
+          </p>
+
+          <p class="muted">
+            I spend a lot of my time on the unglamorous parts of the job:
+            root-causing production issues, optimizing slow queries,
+            and writing documentation that actually helps the next person.
+            I work well inside Agile teams and enjoy the back-and-forth
+            with product, design and QA.
+          </p>
+
+          <div class="about-highlights">
+
+            <div class="highlight">
+              <strong>Node.js · React</strong>
+              <span>Primary stack</span>
+            </div>
+
+            <div class="highlight">
+              <strong>PostgreSQL · MySQL</strong>
+              <span>Query optimization</span>
+            </div>
+
+            <div class="highlight">
+              <strong>REST APIs</strong>
+              <span>API-first design</span>
+            </div>
+
+            <div class="highlight">
+              <strong>Agile</strong>
+              <span>Sprint-based delivery</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============ Experience ============ -->
+
+    <section id="experience">
+
+      <div class="wrap">
+
+        <div class="section-head" data-reveal>
+
+          <span class="eyebrow">
+            Experience
+          </span>
+
+          <h2>
+            Where I've worked
+          </h2>
+
+          <p>
+            A short career so far, focused on shipping and keeping things running.
+          </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+          <div class="tl-entry" data-reveal>
+
+            <div class="tl-dot"></div>
+
+            <div class="tl-card">
+
+              <div class="tl-meta">
+
+                <span class="role">
+                  Software Developer
+                </span>
+
+                <span class="date">
+                  Aug 2024 — Present
+                </span>
+
+              </div>
+
+              <div class="tl-org">
+                Celton Semiconductors Pvt. Ltd
+              </div>
+
+              <ul>
+
+                <li>
+                  Migrated internal AppSheet solutions into full-stack
+                  web applications using Node.js, React.js, Angular and PostgreSQL.
+                </li>
+
+                <li>
+                  Designed and integrated backend REST APIs for real-time
+                  data processing and workflow automation.
+                </li>
+
+                <li>
+                  Ran root cause analysis on backend services and shipped
+                  fixes that improved system stability.
+                </li>
+
+                <li>
+                  Built learner lifecycle features — automated notifications,
+                  reminders and communication workflows.
+                </li>
+
+                <li>
+                  Optimized PostgreSQL and MySQL queries to improve
+                  performance and data reliability.
+                </li>
+
+                <li>
+                  Maintained API specs and workflow documentation for
+                  onboarding and long-term maintainability.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============ Skills ============ -->
+
+    <section id="skills">
+
+      <div class="wrap">
+
+        <div class="section-head" data-reveal>
+
+          <span class="eyebrow">
+            Skills
+          </span>
+
+          <h2>
+            What I work with
+          </h2>
+
+          <p>
+            Languages, frameworks and tools I use day to day.
+          </p>
+
+        </div>
+
+
+        <div class="skills-wrap">
+
+          <div class="skill-card" data-reveal>
+
+            <div
+              class="icon-tile"
+              style="background:var(--primary);"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+              </svg>
+
+            </div>
+
+            <h3>
+              Languages
+            </h3>
+
+            <div class="chip-row">
+
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Java</span>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="skill-card"
+            data-reveal
+            data-reveal-delay="1"
+          >
+
+            <div
+              class="icon-tile"
+              style="background:var(--cyan);"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M4 4h16v16H4z" />
+                <path d="M4 9h16" />
+              </svg>
+
+            </div>
+
+            <h3>
+              Backend
+            </h3>
+
+            <div class="chip-row">
+
+              <span class="chip">Node.js</span>
+              <span class="chip">Express.js</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Django</span>
+              <span class="chip">REST APIs</span>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="skill-card"
+            data-reveal
+            data-reveal-delay="2"
+          >
+
+            <div
+              class="icon-tile"
+              style="background:var(--orange);"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M4 6h16M4 12h16M4 18h10" />
+              </svg>
+
+            </div>
+
+            <h3>
+              Frontend
+            </h3>
+
+            <div class="chip-row">
+
+              <span class="chip">React.js</span>
+              <span class="chip">Angular</span>
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">ES6+</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-card" data-reveal>
+
+            <div
+              class="icon-tile"
+              style="background:var(--mint);"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <ellipse
+                  cx="12"
+                  cy="6"
+                  rx="8"
+                  ry="3"
+                />
+
+                <path
+                  d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Databases
+            </h3>
+
+            <div class="chip-row">
+
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Supabase</span>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="skill-card"
+            data-reveal
+            data-reveal-delay="1"
+          >
+
+            <div
+              class="icon-tile"
+              style="background:var(--pink);"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Cloud
+            </h3>
+
+            <div class="chip-row">
+
+              <span class="chip">
+                Microsoft Azure
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="skill-card"
+            data-reveal
+            data-reveal-delay="2"
+          >
+
+            <div
+              class="icon-tile"
+              style="background:var(--primary-dark);"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="3"
+                />
+
+                <path
+                  d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1-1.6 1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1 1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.9.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.9V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"
+                />
+
+              </svg>
+
+            </div>
+
+            <h3>
+              Tools
+            </h3>
+
+            <div class="chip-row">
+
+              <span class="chip">Git</span>
+              <span class="chip">Postman</span>
+              <span class="chip">pgAdmin</span>
+              <span class="chip">DBeaver</span>
+              <span class="chip">VS Code</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============ Projects ============ -->
+
+    <section id="projects">
+
+      <div class="wrap">
+
+        <div class="section-head" data-reveal>
+
+          <span class="eyebrow">
+            Projects
+          </span>
+
+          <h2>
+            Things I've built
+          </h2>
+
+          <p>
+            The key projects which I have built during my academic period
+          </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+          <!-- Project 1 -->
+
+          <div
+            class="project-card"
+            data-reveal
+          >
+
+            <div class="project-inner">
+
+              <div class="project-top">
+
+                <h3>
+                  DL for Disease Detection in Tea Leaves
+                </h3>
+
+              </div>
+
+              <div class="project-stack">
+
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>HTML</span>
+                <span>CSS</span>
+
+              </div>
+
+              <ul>
+
+                <li>
+                  Developed a machine learning-based system for
+                  detecting diseases in tea leaves.
+                </li>
+
+                <li>
+                  Processed image-based data using Python and machine
+                  learning techniques.
+                </li>
+
+                <li>
+                  Built a simple web interface using HTML and CSS
+                  for interacting with the detection system.
+                </li>
+
+              </ul>
+
+              <div class="project-links">
+
+                <a
+                  class="btn btn-outline btn-sm"
+                  href="https://github.com/Hariharan-345/DL-for-Tea-Leaves-Disease-Detection"
+                  target="_blank"
+                  rel="noopener"
+                >
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9c0-1 .1-1.4-.5-2 2-.2 4.5-1 4.5-5a4 4 0 00-1-2.7c.4-1 .4-2.2 0-3.3 0 0-1-.3-3 1.2a10 10 0 00-5.5 0C7.6 3.7 6.6 4 6.6 4a4 4 0 00-1 3.3A4 4 0 004.6 10c0 4 2.5 4.8 4.5 5-.6.6-.6 1.2-.5 2V21"
+                    />
+
+                  </svg>
+
+                  Code
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Project 2 -->
+
+          <div
+            class="project-card"
+            data-reveal
+            data-reveal-delay="1"
+          >
+
+            <div class="project-inner">
+
+              <div class="project-top">
+
+                <h3>
+                  Mobile Application for Sustainable Crop Recommendation System
+                </h3>
+
+              </div>
+
+              <div class="project-stack">
+
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>SQL</span>
+
+              </div>
+
+              <ul>
+
+                <li>
+                  Developed an ML-based crop recommendation system
+                  using structured agricultural data.
+                </li>
+
+                <li>
+                  Implemented data processing and machine learning
+                  workflows for crop recommendations.
+                </li>
+
+                <li>
+                  Used Python and SQL for processing and managing
+                  recommendation data.
+                </li>
+
+              </ul>
+
+              <div class="project-links">
+
+                <a
+                  class="btn btn-outline btn-sm"
+                  href="https://github.com/Hariharan-345/Mobile-Application-for-Crop-Recommendation"
+                  target="_blank"
+                  rel="noopener"
+                >
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9c0-1 .1-1.4-.5-2 2-.2 4.5-1 4.5-5a4 4 0 00-1-2.7c.4-1 .4-2.2 0-3.3 0 0-1-.3-3 1.2a10 10 0 00-5.5 0C7.6 3.7 6.6 4 6.6 4a4 4 0 00-1 3.3A4 4 0 004.6 10c0 4 2.5 4.8 4.5 5-.6.6-.6 1.2-.5 2V21"
+                    />
+
+                  </svg>
+
+                  Code
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============ Education & Certifications ============ -->
+
+    <section id="education">
+
+      <div class="wrap edu-cert-grid">
+
+
+        <!-- Education -->
+
+        <div data-reveal>
+
+          <span class="eyebrow">
+            Education
+          </span>
+
+          <h2
+            style="
+              font-size:1.7rem;
+              margin-bottom:20px;
+            "
+          >
+            Academic background
+          </h2>
+
+
+          <div class="edu-item">
+
+            <div>
+
+              <div class="school">
+                B.E, Computer Science and Engineering
+              </div>
+
+              <div class="detail">
+                Anna University · 2020–2024
+              </div>
+
+            </div>
+
+            <div class="score">
+              CGPA 8.4
+            </div>
+
+          </div>
+
+
+          <div class="edu-item">
+
+            <div>
+
+              <div class="school">
+                HSC
+              </div>
+
+              <div class="detail">
+                St. Joseph's Mat. Hr. Sec. School
+              </div>
+
+            </div>
+
+            <div class="score">
+              74.1%
+            </div>
+
+          </div>
+
+
+          <div class="edu-item">
+
+            <div>
+
+              <div class="school">
+                SSLC
+              </div>
+
+              <div class="detail">
+                St. Joseph's Mat. Hr. Sec. School
+              </div>
+
+            </div>
+
+            <div class="score">
+              86.4%
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Certifications -->
+
+        <div data-reveal data-reveal-delay="1">
+
+          <span class="eyebrow">
+            Certifications
+          </span>
+
+          <h2
+            style="
+              font-size:1.7rem;
+              margin-bottom:20px;
+            "
+          >
+            Courses & credentials
+          </h2>
+
+
+          <div class="cert-item">
+
+            <div class="cert-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M12 15a4 4 0 100-8 4 4 0 000 8zM8.2 14.5L6 21l6-3 6 3-2.2-6.5"
+                />
+
+              </svg>
+
+            </div>
+
+            <span class="cert-name">
+              Java Programming — CodeChef
+            </span>
+
+            <span class="cert-year">
+              2023
+            </span>
+
+          </div>
+
+
+          <div class="cert-item">
+
+            <div class="cert-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M12 15a4 4 0 100-8 4 4 0 000 8zM8.2 14.5L6 21l6-3 6 3-2.2-6.5"
+                />
+
+              </svg>
+
+            </div>
+
+            <span class="cert-name">
+              Introduction to Cybersecurity — Cisco
+            </span>
+
+            <span class="cert-year">
+              2023
+            </span>
+
+          </div>
+
+
+          <div class="cert-item">
+
+            <div class="cert-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M12 15a4 4 0 100-8 4 4 0 000 8zM8.2 14.5L6 21l6-3 6 3-2.2-6.5"
+                />
+
+              </svg>
+
+            </div>
+
+            <span class="cert-name">
+              Cloud Fundamentals — IBM & TNSDC
+            </span>
+
+            <span class="cert-year">
+              2022
+            </span>
+
+          </div>
+
+
+          <div class="cert-item">
+
+            <div class="cert-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M12 15a4 4 0 100-8 4 4 0 000 8zM8.2 14.5L6 21l6-3 6 3-2.2-6.5"
+                />
+
+              </svg>
+
+            </div>
+
+            <span class="cert-name">
+              Fundamentals of Data Science — G Learn
+            </span>
+
+            <span class="cert-year">
+              2023
+            </span>
+
+          </div>
+
+
+          <div class="cert-item">
+
+            <div class="cert-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+
+                <path
+                  d="M12 15a4 4 0 100-8 4 4 0 000 8zM8.2 14.5L6 21l6-3 6 3-2.2-6.5"
+                />
+
+              </svg>
+
+            </div>
+
+            <span class="cert-name">
+              Python Programming — Retech Solution
+            </span>
+
+            <span class="cert-year">
+              2023
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Admin-added sections render here -->
+
+    <div
+      id="customSections"
+      class="wrap"
+    ></div>
+
+
+    <!-- ============ Contact ============ -->
+
+    <section id="contact">
+
+      <div class="wrap">
+
+        <div
+          class="contact-panel"
+          data-reveal
+        >
+
+          <div class="contact-inner">
+
+            <h2>
+              Let's build something reliable together.
+            </h2>
+
+            <p>
+              Open to backend and full-stack roles.
+              The fastest way to reach me is email or phone —
+              I'll get back to you quickly.
+            </p>
+
+
+            <div class="contact-actions">
+
+              <a
+                class="btn btn-primary"
+                href="mailto:imdhariharan@gmail.com"
+              >
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M4 6h16v12H4z" />
+                  <path d="M4 7l8 6 8-6" />
+                </svg>
+
+                Email me
+
+              </a>
+
+
+              <a
+                class="btn btn-outline"
+                href="tel:+919080940328"
+              >
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+
+                  <path
+                    d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.3a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2.1z"
+                  />
+
+                </svg>
+
+                Call me
+
+              </a>
+
+
+              <!-- DOWNLOAD RESUME BUTTON -->
+
+              <a
+                class="btn btn-outline"
+                href="./assets/resume.pdf"
+                download="Hariharan-D-Software-Developer-Resume.pdf"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/>
+                </svg>
+                Download resume
+              </a>
+
+            </div>
+
+
+            <div class="contact-socials">
+
+
+              <!-- LinkedIn -->
+
+              <a
+                href="https://www.linkedin.com/in/hariharan-d-370a40285"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+
+                  <path
+                    d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.24h4.5V23h-4.5V8.24zM8.5 8.24h4.3v2h.06c.6-1.1 2.06-2.3 4.24-2.3 4.53 0 5.37 3 5.37 6.86V23h-4.5v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4.5V8.24z"
+                  />
+
+                </svg>
+
+              </a>
+
+
+              <!-- GitHub -->
+
+              <a
+                href="https://www.github.com/Hariharan-345"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+
+                  <path
+                    d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.77 10.77.57.1.78-.25.78-.55v-2c-3.16.69-3.83-1.52-3.83-1.52-.52-1.3-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.74.4-1.23.72-1.5-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.05-.12-.29-.5-1.45.11-3.02 0 0 .96-.3 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.46 3.14-1.16 3.14-1.16.61 1.57.23 2.73.11 3.02.73.8 1.17 1.81 1.17 3.05 0 4.35-2.65 5.31-5.18 5.59.41.36.77 1.06.77 2.14v3.17c0 .3.2.66.79.55 4.5-1.51 7.76-5.76 7.76-10.77C23.25 5.48 18.27.5 12 .5z"
+                  />
+
+                </svg>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    Last Updated on
+    <span id="year"></span>
+  </footer>
+
+
+  <!-- ================= Admin controls ================= -->
+
+  <div
+    class="admin-fab"
+    id="adminFab"
+    style="display:none;"
+  >
+
+    <button
+      class="secondary-a"
+      id="btnPreview"
+    >
+      Preview as visitor
+    </button>
+
+    <button
+      class="primary-a"
+      id="btnAddSection"
+    >
+      + Add section
+    </button>
+
+    <button
+      class="secondary-a"
+      id="btnLogout"
+    >
+      Log out
+    </button>
+
+  </div>
+
+
+  <!-- Login modal -->
+
+  <div
+    class="modal-overlay"
+    id="loginOverlay"
+  >
+
+    <div class="modal">
+
+      <h3>
+        Admin access
+      </h3>
+
+      <p class="hint">
+        Only you should have this password.
+        It's checked in your browser, so treat it as a lock, not a vault.
+      </p>
+
+      <label for="pwInput">
+        Password
+      </label>
+
+      <input
+        type="password"
+        id="pwInput"
+        placeholder="••••••••"
+      />
+
+      <p
+        class="modal-error"
+        id="loginError"
+      >
+        Incorrect password.
+      </p>
+
+      <div class="modal-actions">
+
+        <button id="btnCancelLogin">
+          Cancel
+        </button>
+
+        <button
+          class="primary"
+          id="btnSubmitLogin"
+        >
+          Unlock
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Add / edit section modal -->
+
+  <div
+    class="modal-overlay"
+    id="sectionOverlay"
+  >
+
+    <div class="modal">
+
+      <h3 id="sectionModalTitle">
+        Add a section
+      </h3>
+
+      <p class="hint">
+        Draft sections are only visible to you while admin mode is on.
+        Publish when you're ready for visitors to see it.
+      </p>
+
+      <input
+        type="hidden"
+        id="editingId"
+      />
+
+      <label for="secTitle">
+        Title
+      </label>
+
+      <input
+        type="text"
+        id="secTitle"
+        placeholder="e.g. Writing, Talks, Open Source"
+      />
+
+      <label for="secSubtitle">
+        Subtitle (optional)
+      </label>
+
+      <input
+        type="text"
+        id="secSubtitle"
+        placeholder="A short line under the title"
+      />
+
+      <label for="secBody">
+        Content
+      </label>
+
+      <textarea
+        id="secBody"
+        placeholder="Write the section content here. Line breaks are preserved."
+      ></textarea>
+
+      <div class="checkline">
+
+        <input
+          type="checkbox"
+          id="secPublished"
+        />
+
+        <label
+          for="secPublished"
+          style="margin:0;"
+        >
+          Publish immediately
+          (uncheck to keep as a private draft)
+        </label>
+
+      </div>
+
+      <div class="modal-actions">
+
+        <button id="btnCancelSection">
+          Cancel
+        </button>
+
+        <button
+          class="primary"
+          id="btnSaveSection"
+        >
+          Save section
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
